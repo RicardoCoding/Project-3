@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+}
+
+header {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.signup {
+    text-align: center;
+}
+
+.hr1 {
+    height: 4px;
+    background-color: black;
+    margin-bottom: -6px;
+    width: 92%
+}
+
+.hr2 {
+    height: 1.5px;
+    background-color: black;
+    width: 92%;
+}
+
+.contact-info {
+    margin-left: 15px;
+}
+
+#zipcode {
+    margin-bottom: 20px;
+}
+
+
+
+
+
