@@ -16,18 +16,18 @@
 
   <main>
     <section class="signup">
-    <h2>Singup for our newsletter</h2>
-    <p>Get the latest news on how your code is doing right in your inbox</p>
+    <h2>Singup for our newsletter</h2> 
+    <p class="paragraph1">Get the latest news on how your code is doing right in your inbox</p>
     </section>
     <hr class="hr1">
     <hr class="hr2">
     <section class="contact-info">
-      <h2>Contact Information</h2>
+      <h2>Contact Information</h2> 
       <label for="name">Full Name</label><br>
-      <input type="text" id="name" name="user-name"><br>
+      <input type="text" id="name" name="user-name" placeholder="Required"><br>
 
       <label for="mail">Email Address</label><br>
-      <input type="email" id="mail" name="user-email"><br>
+      <input type="email" id="mail" name="user-email" placeholder="Required"><br>
 
       <label for="phone">Phone Number</label><br>
       <input type="tel" id="phone" name="user-phone"><br>
@@ -37,24 +37,104 @@
 
       <label for="city">City</label><br>
       <input type="text" id="city" name="user-city"><br>
+    
+      <label for="state">State</label><br>
+      <select id="state" name="user-state">
+      <option>Choose State</option>
+      <option>AL</option>
+      <option>AK</option>
+      <option>AZ</option>
+      <option>AR</option>
+      <option>CA</option>
+      <option>CO</option>
+      <option>CT</option>
+      <option>DE</option>
+      <option>DC</option>
+      <option>FL</option>
+      <option>GA</option>
+      <option>GU</option>
+      <option>HI</option>
+      <option>ID</option>
+      <option>IL</option>
+      <option>IN</option>
+      <option>IA</option>
+      <option>KS</option>
+      <option>KY</option>
+      <option>LA</option>
+      <option>ME</option>
+      <option>MD</option>
+      <option>MA</option>
+      <option>MI</option>
+      <option>MN</option>
+      <option>MS</option>
+      <option>MO</option>
+      <option>MT</option>
+      <option>NE</option>
+      <option>NV</option>
+      <option>NH</option>
+      <option>NJ</option>
+      <option>NM</option>
+      <option>NY</option>
+      <option>NC</option>
+      <option>ND</option>
+      <option>OH</option>
+      <option>OK</option>
+      <option>OR</option>
+      <option>PA</option>
+      <option>PR</option>
+      <option>RI</option>
+      <option>SC</option>
+      <option>SD</option>
+      <option>TN</option>
+      <option>TX</option>
+      <option>UT</option>
+      <option>VT</option>
+      <option>VA</option>
+      <option>VI</option>
+      <option>WA</option>
+      <option>WV</option>
+      <option>WI</option>
+      <option>WY</option>
+    </select><br>
 
       <label for="zipcode">Zip Code</label><br>
       <input type="text" id="zipcode" name="user-zipcode"><br>
-    
-      <label for="state">State</label><br>
-      <select id="state" name="user-state"><br>
-      <option>TX</option>
-      <option>NY</option>
-      <option>FL</option>
-
-
-    
-  
     </section>
+      
       <hr class="hr2">
+    
+    <section class="newsletter">
+      <h2>Newsletter</h2> 
+      
+      <p>Select the newsletters you would like to receive</p>
+      <input type="checkbox" id="html" value="html-news" name="user_html">
+      <label>HTML News</label><br>
+      <br>
+      <input type="checkbox" id="css" value="css-news" name="user_css">
+      <label>CSS News</label><br>
+      <br>
+      <input type="checkbox" id="JS" value="JS-news" name="user_JS">
+      <label>Javascript News</label>
+      <br>
+      <p>Newsletter format</p>
+      <input type="radio" id="HTML" value="HTML" name="user_HTML">
+      <label for="HTML" class="light">HTML</label><br>
+      <br>
+      <input type="radio" id="plain" value="plain" name="user_plain">
+      <label for="plain" class="light">Plain text</label><br>
+
+      <p>Other topics you'd like to hear about</p>
+      <textarea id="bio" name="user-bio"></textarea>
+
+    </section><br>
+    
+    <section class="button">
+      <button type="submit">Sign Up</button>
+    </section><br>
+    
   </main>
 
-  <footer></footer>
+  <footer>Copyright The Code Review</footer>
 </body>
 
 
