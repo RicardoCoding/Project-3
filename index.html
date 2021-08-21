@@ -6,48 +6,49 @@
   <title>Online Registration Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <link href="" rel="stylesheet">  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <h2 class="header">THE CODE REVIEW</h2>
 <form> 
-    <section class="signup">
-    <h2>Singup for our newsletter</h2> 
+   
+    <h2 class="h2signup">Singup for our newsletter</h2> 
     <p class="paragraph1">Get the latest news on how your code is doing right in your inbox</p>
-    </section>
-    <hr class="hr1">
-    <hr class="hr2">
-    
-    <fieldset>
-      <section class="contact-info">
-        <legend><h2>Contact Information</h2></legend>
+  
+      <hr class="hr1">
+      <hr class="hr2">
+
+    <fieldset class="fieldset1"> 
+        <legend class="contact">Contact Information</legend>
         <div class="full-name">
-          <label for="name">Full Name</label><br>
-          <input type="text" id="name" name="user-name" placeholder="Required"><br>
+          <label for="name" class="fullname">Full Name</label>
+          <input type="text" id="name" name="user-name" placeholder="Required">
         </div>
         <div class="email-address">
-          <label for="mail">Email Address</label><br>
+          <label for="mail" class="emailaddress">Email Address</label>
           <input type="email" id="mail" name="user-email" placeholder="Required"><br>
         </div>
         <div class="phone-number">
-          <label for="phone">Phone Number</label><br>
-          <input type="telephone" id="phone" name="user-phone"><br>
+          <label for="phone" class="phonenumber">Phone Number</label><br>
+          <input type="tel" id="phone" name="user-phone"><br>
         </div>
         <div class="street-address">
-          <label for="address">Street Address</label><br>
+          <label for="address" class="streetaddress">Street Address</label><br>
           <input type="text" id="address" name="user-address"><br>
         </div>
-        <div class="city">
-          <label for="city">City</label><br>
-          <input type="text" id="city" name="user-city"><br>
+        <div class="City">
+          <label for="city" class="cityL">City</label>
+          <input type="text" id="city" name="user-city">
         </div>
         <div class="state">
-          <label for="state">State</label><br>
+          <label for="state" class="stateL">State</label>
           <select id="state" name="user-state">
-          <option>Choose State</option>
-          <option>AL</option>
+          <option class="choose" value="choose">Choose State</option>
+          <option value="al">AL</option>
           <option>AK</option>
           <option>AZ</option>
           <option>AR</option>
@@ -104,48 +105,52 @@
         </select><br>
        </div>  
        <div class="zip-code">
-        <label for="zipcode">Zip Code</label><br>
+        <label for="zipcode" class="zipcodeL">Zip Code</label><br>
         <input type="text" id="zipcode" name="user-zipcode"><br>
        </div>
-      </section>
-        
-      <hr class="hr2">
+       <div class="emergency-contact">
+        <label for="emergency" class="emergencycontact">Emergency Contact</label>
+        <input type="text" id="emergency" name="user-emergency" placeholder="Required">
+      </div>
+      
+      
+      <hr class="hr3">
+    
     </fieldset>
     
-    <fieldset>
-      <section class="newsletter">
-        <legend><h2>Newsletter</h2></legend>
-        
-        <p>Select the newsletters you would like to receive</p>
-        <input type="checkbox" id="html" value="html-news" name="user_checkbox">
-        <label>HTML News</label><br>
-        <br>
-        <input type="checkbox" id="css" value="css-news" name="user_checkbox">
-        <label>CSS News</label><br>
-        <br>
-        <input type="checkbox" id="JS" value="JS-news" name="user_checkbox">
-        <label>Javascript News</label>
-        <br>
-        <p>Newsletter format</p>
-        <input type="radio" id="HTML" value="HTML" name="user_format">
-        <label for="HTML" class="light">HTML</label><br>
-        <br>
-        <input type="radio" id="plain" value="plain" name="user_format">
-        <label for="plain" class="light">Plain text</label><br>
-
-        <p>Other topics you'd like to hear about</p>
+    <fieldset class="fieldset2">
+      
+      
+        <legend class="news">Newsletter</legend>
+        <section class="section">
+          <p>Select the newsletters you would like to receive</p>
+          <input type="checkbox" id="html" value="html-news" name="user_checkbox">
+          <label>HTML News</label><br>
+          <br>
+          <input type="checkbox" id="css" value="css-news" name="user_checkbox">
+          <label>CSS News</label><br>
+          <br>
+          <input type="checkbox" id="JS" value="JS-news" name="user_checkbox">
+          <label>Javascript News</label>
+          <br>
+          <p class="newsletter-format">Newsletter format</p>
+          <input type="radio" id="HTML" value="HTML" name="user_format">
+          <label for="HTML" class="light">HTML</label><br>
+          <br>
+          <input type="radio" id="plain" value="plain" name="user_format">
+          <label for="plain" class="light">Plain text</label><br>
+        </section>
+        <p class="other-topics">Other topics you'd like to hear about</p>
         <textarea id="bio" name="user-bio"></textarea>
 
-      </section><br>
-      
-      <section class="button">
         <button type="submit">Sign Up</button>
-      </section><br>
+        
+    
     </fieldset>
   
+    <footer>Copyright The Code Review</footer>
 
-  <footer>Copyright The Code Review</footer>
-</form>
+  </form>
 </body>
 </html>
 

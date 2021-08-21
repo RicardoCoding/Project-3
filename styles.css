@@ -1,4 +1,6 @@
-
+* {
+    font-family: 'Merriweather', serif;
+}
 
 body {
     margin: 0;
@@ -13,7 +15,8 @@ body {
     margin-top: -5px;
 }
 
-.signup {
+.h2signup,
+.paragraph1 {
     text-align: center;
 }
 
@@ -21,18 +24,18 @@ body {
     height: 4px;
     background-color: rgb(54, 54, 54);
     margin-bottom: -6px;
-    width: 92%
+    width: 90%
 }
 
-.hr2 {
+.hr2,
+.hr3 {
     height: 1.5px;
-    background-color: rgb(54, 54, 54);
-    width: 92%;
+    background-color: rgb(77, 76, 76);
+    width: 90%;
 }
 
-.contact-info,
-.newsletter {
-    margin-left: 15px;
+.hr3 {
+    width: 100%;
 }
 
 #zipcode {
@@ -44,12 +47,13 @@ button {
     padding: 20px 110px 20px 110px;
     background-color: rgb(117, 194, 194);
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     border: none;
     border-radius: 5px;
+    width: 100%;
 }
 
-.button {
+button {
     text-align: center;
 }
 
@@ -58,17 +62,13 @@ footer {
     font-size: 13px;
     font-style: italic;
     padding-bottom: 120px;
-}
-
-p, 
-label,
-footer {
-    color: grey;
+    color: rgb(185, 184, 184);
+    padding-top: 20px;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="telephone"],
+input[type="tel"],
 textarea,
 select {
   background: rgba(255,255,255,0.1);
@@ -78,7 +78,7 @@ select {
   margin: 0;
   outline: 0;
   padding: 15px;
-  width: 85%;
+  width: 90%;
   background-color: #eeeeee;
   color: #c7cdd1;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
@@ -92,11 +92,12 @@ input[id="zipcode"] {
 }
 
 select[id="state"] {
-    width: 95%;
+    width: 100%;
 }
 
 textarea[id="bio"] {
     height: 75px;
+    width: 90%;
 }
 
 input::placeholder {
@@ -107,7 +108,11 @@ input::placeholder {
 }
 
 .paragraph1 {
-    padding-bottom: 25px;
+    padding-bottom: 12px;
+    color: rgb(212, 211, 211);
+    width: 95%;
+    font-size: 12.5px;
+    padding-left: 10px;
 }
 
 input:focus, 
@@ -129,9 +134,58 @@ fieldset {
     border: none;
 }
 
+.header,
+h2 {
+    font-size: 17px;
+}
+
+.other-topics {
+    padding-top: 20px;
+}
+
+label,
+p {
+    color: rgb(185, 184, 184);
+}
+
+h2 {
+    padding-top: 16px;
+    font-size: 20px;
+}
+
+.news {
+    padding-bottom: 10px;
+}
+
+.contact {
+    padding-bottom: 20px;
+}
+
+.contact,
+.news {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+.newsletter-format {
+    padding-top: 18px;
+}
+
+.section {
+    background-color: rgb(240, 238, 238);
+}
+
+textarea:focus {
+    background-color:rgb(211, 79, 145);
+}
+
+
+
+
 @media (min-width: 768px) {
-   form {
-       max-width: 560px;
+   
+    form {
+       max-width: 520px;
        margin: auto;
    }
    
@@ -139,16 +193,88 @@ fieldset {
    .email-address,
    .phone-number,
    .street-address,
-   .city,
+   .City,
    .state,
-   .zip-code {
+   .zip-code,
+   .emergency-contact {
        display: flex;
        align-items: center;
        flex-direction: row;
        flex: 1;
    }
 
+   .fullname,
+   .emailaddress,
+   .phonenumber,
+   .streetaddress,
+   .cityL,
+   .stateL,
+   .emergencycontact {
+       flex-basis: 35%;
+   }
+
+   .emergencycontact {
+        padding-right: 7px;
+   }
+
+   .zipcodeL {
+       flex-basis: 26.5%;
+   }
    
+   input[id="zipcode"] {
+       width: 28%;
+   }
+
+   p,
+   label {
+       font-size: 13px;
+   }
+
+   .header,
+   h2 {
+       font-size: 20px;
+   }
+   
+   .h2signup {
+       padding-top: 25px;
+   }
+
+   button[type="submit"],
+   textarea[id="bio"] {
+       width: 100%;
+   }
+  
+   .hr1,
+   .hr2 {
+       width: 94.5%;
+   }
+
+   .hr3 {
+       width: 100%;
+   }
+
+   textarea {
+       max-width: 94%;
+       
+   }
+
+   button {
+       width: 100%;
+   }
+  
+   p,
+    label {
+    color: rgb(143, 142, 142);
+}
+ 
+    footer {
+    color: rgb(212, 211, 211);
+    font-size: 13px;
+ }
+
+    select[id="state"] {
+        font-size: 12px;
+    }
 
 }
 
