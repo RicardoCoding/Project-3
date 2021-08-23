@@ -112,7 +112,8 @@ input::placeholder {
 }
 
 input:focus, 
-textarea:focus {
+textarea:focus,
+select:focus {
     outline: 2px solid rgb(131, 131, 182);
     outline-style: auto;
 }
@@ -220,11 +221,11 @@ input[id="zipcode"] {
    }
 
    .emergencycontact {
-        padding-right: 7px;
+        padding-right: 1px;
    }
 
    .zipcodeL {
-       flex-basis: 26.5%;
+       flex-basis: 25.8%;
    }
    
    input[id="zipcode"] {
