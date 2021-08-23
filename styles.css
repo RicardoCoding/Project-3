@@ -225,11 +225,11 @@ input[id="zipcode"] {
    }
 
    .zipcodeL {
-       flex-basis: 25.8%;
+       flex-basis: 26.2%;
    }
    
-   input[id="zipcode"] {
-       width: 28%;
+   .stateL {
+        flex-basis: 36%;
    }
 
    p,
@@ -270,7 +270,7 @@ input[id="zipcode"] {
    }
   
    p,
-    label {
+   label {
     color: rgb(143, 142, 142);
 }
  
