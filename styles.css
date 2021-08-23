@@ -87,12 +87,8 @@ select {
   border-radius: 5px;
 }
 
-input[id="zipcode"] {
-    width: 38%;
-}
-
 select[id="state"] {
-    width: 100%;
+    width: 99.5%;
 }
 
 textarea[id="bio"] {
@@ -178,6 +174,16 @@ h2 {
 textarea:focus {
     background-color:rgb(211, 79, 145);
 }
+
+.other-topics {
+    padding-top: 20px;
+}
+
+input[id="zipcode"] {
+    width: 50%;
+}
+
+
 
 
 
@@ -274,6 +280,10 @@ textarea:focus {
 
     select[id="state"] {
         font-size: 12px;
+    }
+
+    input[id="zipcode"] {
+        width: 25%;
     }
 
 }

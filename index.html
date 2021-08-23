@@ -125,13 +125,13 @@
         <section class="section">
           <p>Select the newsletters you would like to receive</p>
           <input type="checkbox" id="html" value="html-news" name="user_checkbox">
-          <label>HTML News</label><br>
+          <label for="html">HTML News</label><br>
           <br>
           <input type="checkbox" id="css" value="css-news" name="user_checkbox">
-          <label>CSS News</label><br>
+          <label for="css">CSS News</label><br>
           <br>
           <input type="checkbox" id="JS" value="JS-news" name="user_checkbox">
-          <label>Javascript News</label>
+          <label for="JS">Javascript News</label>
           <br>
           <p class="newsletter-format">Newsletter format</p>
           <input type="radio" id="HTML" value="HTML" name="user_format">
@@ -140,11 +140,13 @@
           <input type="radio" id="plain" value="plain" name="user_format">
           <label for="plain" class="light">Plain text</label><br>
         </section>
-        <p class="other-topics">Other topics you'd like to hear about</p>
-        <textarea id="bio" name="user-bio"></textarea>
-
-        <button type="submit">Sign Up</button>
         
+        <section class="other-topics">
+          <label for="bio">Other topics you'd like to hear about</label>
+          <textarea id="bio" name="user-bio"></textarea>
+
+          <button type="submit">Sign Up</button>
+        </section>
     
     </fieldset>
   
