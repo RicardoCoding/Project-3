@@ -96,7 +96,8 @@ textarea[id="bio"] {
     width: 90%;
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
     color: #c7cdd1;
     text-align: right;
     font-size: 12px;

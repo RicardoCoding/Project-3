@@ -26,23 +26,23 @@
         <legend class="contact">Contact Information</legend>
         <div class="full-name">
           <label for="name" class="fullname">Full Name</label>
-          <input type="text" id="name" name="user-name" placeholder="Required">
+          <input type="text" id="name" name="user-name" placeholder="Required" required>
         </div>
         <div class="email-address">
           <label for="mail" class="emailaddress">Email Address</label>
-          <input type="email" id="mail" name="user-email" placeholder="Required"><br>
+          <input type="email" id="mail" name="user-email" placeholder="Required" required><br>
         </div>
         <div class="phone-number">
           <label for="phone" class="phonenumber">Phone Number</label><br>
-          <input type="tel" id="phone" name="user-phone"><br>
+          <input type="tel" id="phone" name="user-phone" placeholder="xxx-xxx-xxxx"><br>
         </div>
         <div class="street-address">
           <label for="address" class="streetaddress">Street Address</label><br>
-          <input type="text" id="address" name="user-address"><br>
+          <input type="text" id="address" name="user-address" placeholder="ex: 123 Main st"><br>
         </div>
         <div class="City">
           <label for="city" class="cityL">City</label>
-          <input type="text" id="city" name="user-city">
+          <input type="text" id="city" name="user-city" placeholder="ex: Dallas">
         </div>
         <div class="state">
           <label for="state" class="stateL">State</label>
@@ -106,7 +106,7 @@
        </div>  
        <div class="zip-code">
         <label for="zipcode" class="zipcodeL">Zip Code</label><br>
-        <input type="text" id="zipcode" name="user-zipcode"><br>
+        <input type="text" id="zipcode" name="user-zipcode" placeholder="ex: 12345"><br>
        </div>
        <div class="emergency-contact">
         <label for="emergency" class="emergencycontact">Emergency Contact</label>
@@ -143,7 +143,7 @@
         
         <section class="other-topics">
           <label for="bio">Other topics you'd like to hear about</label>
-          <textarea id="bio" name="user-bio"></textarea>
+          <textarea id="bio" name="user-bio" placeholder="ex: Sass, or Node, or React"></textarea>
 
           <button type="submit">Sign Up</button>
         </section>
